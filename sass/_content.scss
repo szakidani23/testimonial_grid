@@ -1,0 +1,50 @@
+.testimonial {
+  &__author {
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+  }
+  &__imgbox {
+    &-img {
+      border-radius: 50%;
+      border: .2rem solid $lightgray;
+      max-width: 3rem;
+      &--violet {
+        border: .2rem solid $violet;
+      }
+    }
+  }
+  &__namebox {
+    line-height: 1.7rem;
+  }
+  &__name {
+    color: $lightgray;
+    font-size: 1.3rem;
+    font-weight: 600;
+    &--white {
+      color: $darkgrayblue;
+    }
+  }
+  &__position {
+    color: hsla(0, 0%, 81%, 0.5);
+    font-size: 1.1rem;
+    &--white {
+      color:  hsla(217, 19%, 35%, 0.5);
+    }
+  }
+  &__bold {
+    font-weight: 600;
+    color: $white;
+    font-size: 1.8rem;
+    &--white {
+      color: $darkgrayblue;
+    }
+  }
+  &__story {
+    color: hsla(0, 0%, 81%, 0.7);
+    line-height: 1.8rem;
+    &--white {
+      color:  hsla(217, 19%, 35%, 0.7);
+    }
+  }
+}

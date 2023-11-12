@@ -1,0 +1,43 @@
+.attribution { font-size: 1.1rem; text-align: center; margin-top: 2.5rem; }
+.attribution a { color: hsl(235, 76%, 19%); }
+
+$violet: hsl(263, 55%, 52%);
+$darkgrayblue: hsl(217, 19%, 35%);
+$darkblackblue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+
+$lightgray: hsl(0, 0%, 81%);
+$lightgrayblue: hsl(210, 46%, 95%);
+
+// Verified Gradute 
+// == Name color just with 50% opacity 
+
+// Review paragraphs
+// == Name color 70% opacity
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  img,
+  picture {
+    display: block;
+    max-width: 100%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-size: 62.5%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+  }
+
+  body {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font-size: 1.3rem;
+    background-color: $lightgrayblue;
+  }

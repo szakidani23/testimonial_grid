@@ -1,0 +1,69 @@
+.testimonial-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas:
+   'first'
+   'second'
+   'third'
+   'fourth'
+   'fifth';
+  max-width: 102rem;
+  padding-top: 4rem;
+
+  @media screen and (min-width: 540px) {
+    grid-template-areas: 
+    "first first"
+    "second third"
+    "fifth fifth"
+    "fourth fourth";
+  }
+
+  @media screen and (min-width: 620px) {
+    grid-template-areas: 
+    'first first'
+    'second fifth'
+    'third fifth'
+    'fourth fourth';
+  }
+
+  @media screen and (min-width: 880px) {
+    grid-template-areas: 
+    'first first second'
+    'fifth fifth fifth'
+    'third fourth fourth';
+  }
+
+  @media screen and (min-width: 1200px) {
+    grid-template-areas: 
+    'first first second fifth'
+    'third fourth fourth fifth';
+  }
+}
+
+.testimonial {
+  border-radius: .6rem;
+  &:nth-child(1) {
+    grid-area: first;
+    background-color: $violet;
+    background-image: url(/images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+  &:nth-child(2) {
+    grid-area: second;
+    background-color: $darkgrayblue;
+  }
+  &:nth-child(3) {
+    grid-area: third;
+    background-color: $white;
+  }
+  &:nth-child(4) {
+    grid-area: fourth;
+    background-color: $darkblackblue;
+  }
+  &:nth-child(5) {
+    grid-area: fifth;
+    background-color: $white;
+  }
+}
